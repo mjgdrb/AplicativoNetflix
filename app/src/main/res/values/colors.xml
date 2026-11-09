@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="corPrimaria">#E70001</color>
+    <color name="corPrimariaVariacao">#AA0407</color>
+    <color name="corSecundaria">#E70000</color>
+    <color name="fundo">#171417</color>
 </resources>
