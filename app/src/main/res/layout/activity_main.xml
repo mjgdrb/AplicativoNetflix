@@ -8,6 +8,16 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/ivCapa"
+        android:layout_width="415dp"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/capa_wan" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="48dp"
         android:layout_height="62dp"
@@ -54,16 +64,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="178dp"
-        android:layout_height="107dp"
-        app:layout_constraintBottom_toTopOf="@+id/lgMeio"
-        app:layout_constraintEnd_toStartOf="@+id/lgDireita"
-        app:layout_constraintStart_toStartOf="@+id/lgEsquerda"
-        app:layout_constraintTop_toTopOf="@+id/lgSuperior"
-        app:srcCompat="@drawable/logo" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lgSuperior"
         android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
         android:id="@+id/lgMeio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.44" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <TextView
         android:id="@+id/textView4"
@@ -93,13 +93,13 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Suspense"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/textView6"
@@ -180,5 +180,50 @@
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/lgEsquerda"
         app:layout_constraintTop_toBottomOf="@+id/btAssistir" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/lgEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/f1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLancamentos"
+        app:srcCompat="@drawable/f2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="95dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@id/lgDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/f3" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="242dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/lgMeio"
+        app:layout_constraintEnd_toStartOf="@+id/lgDireita"
+        app:layout_constraintStart_toStartOf="@+id/lgEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/lgSuperior"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_wan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
